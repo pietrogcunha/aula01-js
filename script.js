@@ -1,24 +1,17 @@
-//Comentário em linha
-//Exibir no terminal
 console.log("Olá Mundo");
-//Exibir no navegador
 document.write("Olá Navegador!");
-//um alerta
-alert("Alerta de confirmação!");
 
 //string
 
-var nome = window.prompt("Informe o Nome do Aluno:");
-// Guardar a primeira nota
-var nota1 = window.prompt("Digite a Nota 1");
-// converte a nota1 em texto para decimal
+var nome = window.prompt("Informe o Nome do Aluno");
+var nota1 = window.prompt("Digite a Nota1");
 nota1 = parseFloat(nota1);
-// Guardar a segunda nota
-var nota2 = window.prompt("Digite a Nota 2");
-//converte a nota2 em texto para decimal
+var nota2 = window.prompt("Digite a Nota2");
 nota2 = parseFloat(nota2);
-//calculo a média das duas notas
-var media = (nota1 + nota2)/2;
-//Gero a mensagem de exibição do nome e da média do aluno
-var mensagem = nome + ", você obteve a média : " + media;
+var nota3 = window.prompt("Digite a Nota3");
+nota3 = parseFloat(nota3);
+var nota4 = window.prompt("Digite a Nota4");
+nota4 = parseFloat(nota4);
+var media = (nota1 + nota2 + nota3 + nota4)/4;
+var mensagem = nome + ", você obteve a média : " + média;
 window.alert(mensagem);
