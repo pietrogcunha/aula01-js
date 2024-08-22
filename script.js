@@ -1,17 +1,26 @@
-console.log("Olá Mundo");
-document.write("Olá Navegador!");
 
-//string
+var nome1, nome2 = "";
+var nota1, nota2, nota3, nota4,
+    nota5, nota6, nota7, nota8 = 0;
 
-var nome = window.prompt("Informe o Nome do Aluno");
-var nota1 = window.prompt("Digite a Nota1");
-nota1 = parseFloat(nota1);
-var nota2 = window.prompt("Digite a Nota2");
-nota2 = parseFloat(nota2);
-var nota3 = window.prompt("Digite a Nota3");
-nota3 = parseFloat(nota3);
-var nota4 = window.prompt("Digite a Nota4");
-nota4 = parseFloat(nota4);
-var media = (nota1 + nota2 + nota3 + nota4)/4;
-var mensagem = nome + ", você obteve a média : " + média;
-window.alert(mensagem);
+nome1 = prompt("Digite o Nome do Aluno 1:");
+nota1 = parseFloat(prompt("Digite a Nota 1 do Aluno 1"));
+nota2 = parseFloat(prompt("Digite a Nota 2 do Aluno 1"));
+nota3 = parseFloat(prompt("Digite a Nota 3 do Aluno 1"));
+nota4 = parseFloat(prompt("Digite a Nota 4 do Aluno 1"));
+
+nome2 = prompt("Digite o Nome do Aluno 2:");
+nota5 = parseFloat(prompt("Digite a Nota 1 do Aluno 2"));
+nota6 = parseFloat(prompt("Digite a Nota 2 do Aluno 2"));
+nota7 = parseFloat(prompt("Digite a Nota 3 do Aluno 2"));
+nota8 = parseFloat(prompt("Digite a Nota 4 do Aluno 2"));
+
+var media1, media2 = 0;
+media1 = (nota1 + nota2 + nota3 + nota4) / 4;
+media2 = (nota5 + nota6 + nota7 + nota8) / 4;
+
+var mensagem = `
+${nome1}, sua média é ${media1}, parabéns! 
+${nome2}, sua média é ${media2}, parabéns!`;
+
+alert(mensagem);
